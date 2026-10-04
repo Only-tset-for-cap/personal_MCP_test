@@ -1,0 +1,10 @@
+# .github/workflows/ci.yml
+name: ci
+on: [pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: test -f src/app.js          # 통과용
+      - run: '! grep -q "FAIL_ME" src/app.js'   # 이 문자열이 있으면 실패
