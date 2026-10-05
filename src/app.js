@@ -1,4 +1,8 @@
 
 export const hello = () => 'hi';
 
-export const hello = () => 'hey hey hey';
+export const not_hello = () => 'hey hey hey';
+
+//success
+
+export const goodby = () => 'bye bye'
