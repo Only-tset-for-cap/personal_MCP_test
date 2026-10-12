@@ -1,0 +1,14 @@
+{
+  "name": "personal-pr-review-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Small order-processing domain used to exercise pull-request reviews.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/orderService.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
